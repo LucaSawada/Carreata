@@ -1,9 +1,10 @@
 /* CarreataFasipe - CSS centralizado para mobile */
 :root{
-	--fasipe-red:#d81b23; /* principal */
-	--fasipe-dark:#111217; /* texto */
-	--fasipe-muted:#f6f6f7; /* superfícies claras */
-	--fasipe-border:rgba(216,27,35,0.12);
+	--fasipe-green:#1c7a4b; /* verde institucional */
+	--fasipe-green-dark:#114e34;
+	--fasipe-dark:#0f2f20; /* texto */
+	--fasipe-muted:#e9f4ec; /* superfícies claras */
+	--fasipe-border:rgba(28,122,75,0.18);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
@@ -15,11 +16,39 @@ body{
 	justify-content:center;
 	gap:16px;
 	padding:20px;
-	background:var(--fasipe-muted);
+	background:linear-gradient(180deg, #f6fbf6 0%, #e9f4ec 100%);
 	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 	color:var(--fasipe-dark);
 }
-h1{ text-align:center; font-size:1.5rem; margin-bottom:8px; color:var(--fasipe-red) }
+.page-logo{
+	width:100%;
+	max-width:280px;
+	margin:0 auto;
+	text-align:center;
+}
+.page-logo img{
+	width:100%;
+	max-width:240px;
+	height:auto;
+	display:inline-block;
+}
+.page-footer{
+	width:100%;
+	max-width:280px;
+	margin:0 auto;
+	padding:0;
+	text-align:center;
+	background:transparent;
+	border:none;
+	border-radius:0;
+}
+.page-footer img{
+	width:100%;
+	max-width:240px;
+	height:auto;
+	display:inline-block;
+}
+h1{ text-align:center; font-size:1.6rem; margin-bottom:8px; color:var(--fasipe-green-dark) }
 #formAluno{
 	display:flex !important;
 	flex-direction:column !important;
@@ -35,25 +64,25 @@ h1{ text-align:center; font-size:1.5rem; margin-bottom:8px; color:var(--fasipe-r
 	border-radius:8px;
 	background:#fff;
 }
-#formAluno input::placeholder{ color:#999 }
+#formAluno input::placeholder{ color:#7d7d7d }
 #formAluno button{
-	background:var(--fasipe-red);
+	background:var(--fasipe-green);
 	color:#fff;
 	border:none;
 	cursor:pointer;
 	margin-top:4px;
-	box-shadow:0 4px 10px rgba(216,27,35,0.18);
+	box-shadow:0 4px 10px rgba(28,122,75,0.22);
 }
 #modalLocalizacao, #confirmacao, .timer-container{
 	width:100%;
 	max-width:420px;
 	background:#fff;
 	border-radius:10px;
-	padding:12px;
-	box-shadow:0 2px 8px rgba(0,0,0,0.08);
+	padding:14px;
+	box-shadow:0 2px 12px rgba(0,0,0,0.08);
 	text-align:center;
 }
-#modalLocalizacao button{ width:auto; display:inline-block; margin:8px 6px; padding:10px 16px }
+#modalLocalizacao button{ width:auto; display:inline-block; margin:8px 6px; padding:10px 16px; border-radius:8px; background:var(--fasipe-green); color:#fff; border:none }
 .timer-container{ display:flex; flex-direction:column; align-items:center; gap:6px }
 #countdown{ font-weight:700; font-size:1.1rem }
 img{ max-width:100%; height:auto; display:block }
